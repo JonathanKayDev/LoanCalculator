@@ -73,3 +73,12 @@ main>.container {
     width: 100%;
 }
 
+.card {
+    background-color: lightgray;
+}
+
+.table-header {
+    background-color: var(--primary-color);
+    color: var(--light-color) !important;
+}
+

@@ -48,7 +48,7 @@
     <!-- Main Section-->
     <main class="flex-shrink-0">
         <div class="container">
-            <div class="row">
+            <div class="row mt-2">
                 <h3>Loan Calculator</h3>
                 <div class="col-6">
                     <div class="card p-2">
@@ -65,21 +65,21 @@
                 </div>
                 <div class="col-6">
                     <div class="row">
-                        <div class="col">
-                            <h6>You Monthly Payments</h6>
-                            <h2 id="monthlyPaymentsValue">£0.00</h2>
+                        <div class="col text-center">
+                            <h5 class="mt-2">Your Monthly Payments</h5>
+                            <h1 id="monthlyPaymentsValue" class="mt-4">£0.00</h1>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mt-4 ps-4 ms-4">
                         <div class="col">
                             <div class="mb-1">Total Principal</div>
                             <div class="mb-1">Total Interest</div>
-                            <div>Total Cost</div>
+                            <div><strong>Total Cost</strong></div>
                         </div>
                         <div class="col">
                             <div id="totalPrincipalValue" class="mb-1">£0.00</div>
                             <div id="totalInterestValue" class="mb-1">£0.00</div>
-                            <div id="totalCostValue">£0.00</div>
+                            <div id="totalCostValue" class="fw-bold">£0.00</div>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
             <div class="row mt-4">
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
-                        <thead class="text-secondary">
+                        <thead class="text-secondary table-header">
                             <th>Month</th>
                             <th>Payment</th>
                             <th>Principal</th>
@@ -126,6 +126,19 @@
             </div>
         </div>
     </footer>
+
+    <!-- Template for Results Table-->
+    <template id="loanTemplate">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </template>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
