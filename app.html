@@ -50,7 +50,7 @@
         <div class="container">
             <div class="row mt-2">
                 <h3>Loan Calculator</h3>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="card p-2">
                         <form>
                             <label class="form-label mb-0"><small>Loan Amount</small></label>
@@ -59,11 +59,11 @@
                             <input id="monthsValue" type="number" class="form-control" placeholder="Number of monthly payments" value=24 aria-label="Months Value">
                             <label class="form-label mt-2 mb-0"><small>Rate</small></label>
                             <input id="rateValue" type="number" class="form-control" placeholder="Interest Rate" value=3 aria-label="Interest Rate">
-                            <button id="btnSubmit" type="button" class="btn btn-primary w-25 mt-3">Calculate</button>
+                            <button id="btnSubmit" type="button" class="btn btn-primary mt-3">Calculate</button>
                         </form>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="row">
                         <div class="col text-center">
                             <h5 class="mt-2">Your Monthly Payments</h5>
@@ -145,6 +145,28 @@
     <script src="/js/site.js"></script>
     <script>
         document.getElementById("btnSubmit").addEventListener("click",getValues);
+    </script>
+    <script>
+        $("#loanValue").focus(function() {
+            $("#footer").hide();
+        });
+        $("#loanValue").focusout(function() {
+            $("#footer").show();
+        });
+
+        $("#monthsValue").focus(function() {
+            $("#footer").hide();
+        });
+        $("#monthsValue").focusout(function() {
+            $("#footer").show();
+        });
+
+        $("#rateValue").focus(function() {
+            $("#footer").hide();
+        });
+        $("#rateValue").focusout(function() {
+            $("#footer").show();
+        });
     </script>
 </body>
 
