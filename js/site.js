@@ -18,7 +18,6 @@ function getValues() {
 }
 
 
-
 // LOGIC FUNCTION(S)
 function getPayments(amount, rate, term) {
     let loanPaymentObj = {};
@@ -109,7 +108,6 @@ function validateInput(loanValue, monthsValue, rateValue) {
 
     return output;
 }
-
 
 
 // VIEW FUNCTION(S)
