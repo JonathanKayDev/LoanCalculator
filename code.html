@@ -209,19 +209,29 @@
                 <div class="col-lg-4">
                     <p>The Code is structured into seven functions.</p>
                     <h5>getValues</h5>
-                    <p>#</p>
+                    <p>This functions retrieves the user input from the page with <strong>getElementById</strong>, and converts the inputs to a number type.
+                     The inputs are validated with the <strong>validateInput</strong> function, and if they are valid, the <strong>getPayments</strong> and 
+                    <strong>displayResults</strong> functions are executed.</p>
                     <h5>getPayments</h5>
-                    <p>#</p>
+                    <p>This is the main function of the app, which takes in three arguments that are the three inputs from the user. The function creates an object for the 
+                        loan which has five parameters to store the required information. The '.Payments' parameter is an array of an additional object which is the payment information 
+                        for each individual month, and in turn has six parameters itself. The function uses a 'for loop' to loop over the term period and make the necessary function calls to calculate
+                         the required loan information.
+                    </p>
                     <h5>calcPayment</h5>
-                    <p>#</p>
+                    <p>This function calculates the regular monthly payment amount and used the 'Math.pow' function.</p>
                     <h5>calcMonthlyRate</h5>
-                    <p>#</p>
+                    <p>This function calculated the monthly rate from the annual interest rate.</p>
                     <h5>calcMonthlyInterest</h5>
-                    <p>#</p>
+                    <p>This function calculates the interest in a given month.</p>
                     <h5>validateInput</h5>
-                    <p>#</p>
+                    <p>This function takes in three parameters which are the user inputs. The function uses 'if statements' to determine if the values are appropriate. If the 
+                        user inputs are found to be problematic, the function returns a boolean false value.
+                    </p>
                     <h5>displayResults</h5>
-                    <p>#</p>
+                    <p>displayResults takes in one parameter, a results object. The tables where the results are to be inserted and a template structure of the HTML rows are retrieved 
+                        from the document using <strong>getElementById</strong>. A 'foreach' loop iterates over each element in the '.Payments' parameter of the results object, and inserts the corresponding results to 
+                        the table, using the <strong>appendChild</strong> function.</p>
                 </div>
             </div>
         </div>
